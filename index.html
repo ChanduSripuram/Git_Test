@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition Interactive Webpage</title>
+</head>
+<body>
+    <h1>Addition Interactive Webpage</h1>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="calculateSum()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("result").innerText = "Sum: " + sum;
+        }
+    </script>
+</body>
+</html>
